@@ -1,0 +1,107 @@
+@charset "UTF-8";
+    
+    div[class*="Img"] {
+    border-bottom: 1px dotted #959595;
+    min-height: 100px;
+    padding: 10px 0 25px;
+    margin-bottom: 25px;
+    position: relative;
+    }
+    div.leftImg h2,
+    div.leftImg p {
+    margin-left: 500px;
+    width: 400px;
+    }
+    div.rightImg h2,
+    div.rightImg p {
+    margin-right: 255px;
+    width: 400px;
+    }
+    div[class*="Img"] h2 {
+    background: url(../img/icon3.png) no-repeat 5px .1em;
+    color: #5e75af;
+    font-size: 25px;
+    line-height: 1.1;
+    padding: 0 0 0 20px;
+    margin-bottom: 5px;
+    }
+    div[class*="Img"] p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 15px;
+    margin-bottom: 1em;
+    }
+    div[class*="Img"] img {
+    position: absolute;
+    top: 20px;
+    }
+
+    div.leftImg {
+
+        position: relative;
+    }
+    
+    div.leftImg {
+        position: relative;
+    }
+
+    div.leftImg  img  {
+       margin-top: 10px;
+        margin-left: 0;
+    }
+
+    div.rightImg img {
+      margin-top: 15px;  
+    right: 0;
+    }
+    
+    
+    div.leftImg  img + img {
+    
+    margin-left: 300px;
+    
+    }
+    
+    div.rightImg img + img {
+    right: 300px;
+    }
+
+    
+    
+    
+    
+    /*大画像用設定追加
+    -----------------------------------------*/
+    div.big[class*="Img"] {
+    min-height: 320px;
+    padding: 10px 0 30px;
+    }
+    div.big.leftImg img{
+        left: 135px;
+    }
+    div.big.leftImg h2,
+    div.big.leftImg p {
+    margin-left: 470px;
+    }
+    div.big.rightImg h2,
+    div.big.rightImg p {
+    margin-right: 470px;
+    }
+    
+.scroll {opacity: 0;} /*一瞬表示されるのを防ぐ*/
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;         
+    }
+    100% {
+    opacity: 1;
+    transform: translate(0);
+    }
+}
+    
+    

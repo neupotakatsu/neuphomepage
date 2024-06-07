@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<link rel="stylesheet" href="css/neup.css">
+<link rel="stylesheet" href="css/neuphome.css">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- ↓ページタイトル↓ -->
+    <title>Home|neup</title>
+
+    <!-- ↓検索エンジン用ここから↓ -->
+    <meta name="Description" content="検索用文言">
+    <meta name="Keywords" content="検索用キーワードカンマ（,）区切り">
+    <!-- ↑検索エンジン用ここまで↑-->
+    <link rel="stylesheet" href="css/neup.css" type="text/css">
+    <link rel="stylesheet" href="css/neuphome.css" type="text/css">
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                const wHeight = $(window).height();
+                const scrollPosition = $(window).scrollTop();
+                $('.scroll').each(function () {
+                    const targetPosition = $(this).offset().top;
+                    if (scrollPosition > targetPosition - wHeight + 60) {
+                        $(this).addClass("fadeIn");
+                    }
+                });
+            });
+        });
+    </script>
+
+
+    <!--[if lt IE 9]>
+<script src="common/js/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <noscript>
+        <p id="noscript">このWebサイトはJavaScriptを使用しています。<!--[if lt IE 9]><br>
+    Internet Explorer 7／8をお使いの方はJavaScriptをオンにしてご覧ください。<![endif]-->
+        </p>
+    </noscript>
+
+    <header>
+        <!-- ↓ロゴ↓ -->
+        <h1>
+            <a href="neuphome.html"><img src="img/neuprogo.png" alt="neup" width="150"></a>
+        </h1>
+
+        <!-- ↓キャッチコピー↓ -->
+        <p>オタクのためのオタ活ハンドメイド雑貨店<br>
+        </p>
+
+
+        <!-- ↓ナビゲーションここから↓ -->
+        <nav>
+            <ul>
+                <li><a href="neuphome.html">Home</a></li>
+                <li><a href="neupnews.html">News</a></li>
+                <li><a href="neupmember.html">Member</a></li>
+                <li><a href="neupproducts.html">Products</a></li>
+                <li><a href="neupevent.html">Event</a></li>
+                <!--<li><a href="neup.html">neup</a></li>-->
+            </ul>
+        </nav>
+        <!-- ↑ナビゲーションここまで↑ -->
+    </header>
+    <div class="container">
+        <div id="contents">
+            <section>
+                <!-- 画像領域 -->
+                <div class="out">
+                    <img src="img/R.png">
+                    <input type=radio name="slide" id="slide1">
+                    <input type=radio name="slide" id="slide2">
+                    <input type=radio name="slide" id="slide3">
+                    <input type=radio name="slide" id="slide4">
+                    <div class="in">
+                        <label for="slide1"><span></span><a href="#1"><img src="img/neuprogo2.jpeg" alt="neup"
+                                    width="940"></a></label>
+                        <label for="slide2"><span></span><a href="#2"><img src="img/homeimg1.jpg" alt="neup"
+                                    width="940"></a></label>
+                        <label for="slide3"><span></span><a href="#3"><img src="img/naisou2.jpg" alt="neup"
+                                    width="940"></a></label>
+                        <label for="slide4"><span></span><a href="#4"><img src="img/osi.jpg" alt="neup"
+                                    width="940"></a></label>
+                    </div>
+                </div>
+
+                <div class="contents">
+                    <!-- ↓↓コラム1タイトル↓↓ -->
+
+                    <h1 >concept</h1>
+                    <h2 class="fadeIn">あなたの"沼"推し</h2>
+                    <p>「世のオタ活を盛り上げたい」という理念のもと、"あなたの推し活を応援するお店"として誕生しました。
+                        <br>neupという店名も韓国語で沼という意味の「늪」からとっています。
+
+                    </p>
+                </div>
+
+                <div id="side_prof">
+                    <!-- ▼▼サイドプロフィールここから▼▼ -->
+                    <p><a href="https://www.instagram.com/neup_otakatsu?igsh=bGd2cG43aGZ0YmNz&utm_source=qr"><img
+                                src="img/insta.jpeg" width="170" height="170" alt="プロフィール写真" /></a></p>
+                    <p class="title">instagram</p>
+                    <p class="name">@neup_otakatsu</p>
+                    <p class="text">最新情報などを随時更新していきます！</p>
+                    <!-- ▲▲サイドプロフィールここまで▲▲ -->
+                </div>
+
+                <div id="categoryMenu">
+                    <!-- ↓サブメニューの見出し↓ -->
+                    <h2>Recommendation</h2>
+                    <ul>
+                        <!-- ↓サブメニューここから↓ -->
+                        <li><a href="neupproducts.html#Category1">トレカケース</a></li>
+                        <li><a href="neupproducts.html#Category2">トレカケースキーホルダー</a></li>
+                        <li><a href="neupproducts.html#Category5">缶バッジロゼット</a></li>
+                        <li><a href="neupproducts.html#Category8">ミニフォトキーホルダー</a></li>
+                        <li><a href="neupproducts.html#Category10">アクリルフレーム</a></li>
+                        <!-- ↑サブメニューここまで↑ -->
+                    </ul>
+                </div>
+
+                <div id="information">
+                    <!-- ↓Informationここから↓ -->
+
+                    <!-- ↓↓Informationの見出し↓↓ -->
+                    <h1>Information
+                        <!-- ↓↓Informationの説明文↓↓ -->
+                        <small>お知らせです</small>
+                    </h1>
+
+                    <!-- ↓↓Information1ここから↓↓ -->
+                    <a href="neupnews.html#News1">
+                        <article>
+                            <h2>新年ごあいさつ</h2>
+                            <p>あけましておめでとうございます！2023年碧風祭での様子をまとめたのでぜひ覗いてみてください(^^)</p>
+                            <time>2024.01.01</time>
+                        </article>
+                    </a>
+                    <!-- ↑↑Information1ここまで↑↑ -->
+
+                    <!-- ↓↓Information2ここから↓↓ -->
+                    <a href="neupnews.html#News2">
+                        <article>
+                            <h2>Instagram更新</h2>
+                            <p>Instagramを更新しました！碧風祭のビジュアルコンセプトについての投稿です。</p>
+                            <time>2023.10.24</time>
+                        </article>
+                    </a>
+                    <!-- ↑↑Information2ここまで↑↑ -->
+                </div>
+
+
+
+            </section>
+        </div>
+    </div>
+    
+    <footer>
+        <!-- ↓コピーライト↓ -->
+        <small>© 2024. neup All rights reserved.</small>
+    </footer>
+
+</body>
+
+</html>

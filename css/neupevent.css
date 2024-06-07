@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+/*column.html専用
+-----------------------------------------*/
+body nav ul li a[href="column.html"] {
+    border-bottom: 5px solid #039;
+}
+
+/*column
+-----------------------------------------*/
+div[class*="Img"] {
+    min-height: 400px;
+    padding: 0 10px 30px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+div.leftImg h2,
+div.leftImg p {
+    margin-left: 218px;
+}
+
+div.rightImg h2,
+div.rightImg p {
+    margin-right: 218px;
+    width: 420px;
+}
+
+div[class*="Img"] h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    height: 30px;
+    line-height: 32px;
+    text-indent: 10px;
+    background: url(../img/midashi2c.png) no-repeat;
+}
+
+div[class*="Img"] p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+div[class*="Img"] img {
+    position: absolute;
+    top: 0;
+}
+
+div.leftImg img {
+    left: 10px;
+
+
+}
+
+div.rightImg img {
+    right: 10px;
+    top:40px;
+}
+
+/*大画像用設定追加
+-----------------------------------------*/
+div.big.leftImg {
+  
+    border-bottom: 1px dotted #999;
+}
+
+div.big.leftImg {
+    padding-bottom: 260px;
+}
+
+div.big.leftImg h2,
+div.big.leftImg p {
+    margin-left: 425px;
+}
+
+div.big.rightImg h2,
+div.big.rightImg p {
+    margin-right: 425px;
+}
+
+div.big h2 {
+    background: #d8d8d8;
+}
+
+div.plus.leftImg {
+   margin-bottom: 10px;
+   min-height: 300px;
+}
+
+div.plus.rightImg {
+    margin-top: 30px;
+    margin-bottom: 0;
+    min-height: 300px;
+
+ }
+
+
+/*大画像+ミニ画像
+-----------------------------------------*/
+div.plus[class*="Img"] {
+    min-height: 300px;
+}
+div.plus.leftImg {
+    margin-bottom: 20px;
+}
+div.plus.leftImg img+img {
+    top: 375px;
+}
+
+div.plus.leftImg img+img+img {
+    top: 375px;
+    left: 165px;
+}
+
+div.plus.leftImg img+img+img+img {
+    top: 375px;
+    left: 425px;
+}
+
+div.plus.leftImg img+img+img+img+img {
+    top: 375px;
+    left: 650px;
+}
+
+div.plus.rightImg img+img {
+    
+    right: 245px;
+}
+
+div.plus.rightImg img+img+img {
+    top: 360px;
+    right: 10px;
+}
+
+/*3連画像用設定
+-----------------------------------------*/
+div.allImg {
+    height: auto;
+    padding: 0 0 25px 20px;
+}
+
+div.allImg:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+*+html div.allImg {
+    min-height: 1px;
+}
+
+div.allImg img {
+    position: relative;
+    display: block;
+    float: left;
+    margin-left: 10px;
+}
+
+div.allImg img:first-child {
+    margin-left: 0;
+}

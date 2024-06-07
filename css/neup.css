@@ -1,0 +1,531 @@
+@charset "UTF-8";
+
+/*全ページ共通
+-----------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a img {
+    border: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: #c2c9d7 url(../img/bg.jpg) top center repeat-y fixed;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.2;
+    font-family: "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ Ｐゴシック", sans-serif;
+    min-width: 940px;
+    min-height: 100%;
+    position: relative;
+    margin-top: 0;
+}
+
+a {
+    color: #496bcb;
+}
+
+a:hover {
+    color: #496bcb;
+}
+
+hr {
+    border: none;
+    height: 0;
+    overflow: hidden;
+    border-bottom: 1px dotted #496bcb;
+    clear: both;
+}
+
+header,
+footer,
+section,
+article,
+figure,
+figcaption {
+    display: block;
+}
+
+/*ヘッダー
+    -----------------------------------------*/
+body header {
+    height: 130px;
+    width: 970px;
+    position: relative;
+    margin: 20px auto 40px;
+    border-bottom: 5px solid #6b6b6b;
+    padding: 5px;
+}
+
+body header h1 {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -445px;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    color: #000;
+    font-size: 60px;
+    line-height: 1;
+}
+
+body header h1 a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+body header h1 a:hover {
+    color: #FFF;
+}
+
+body header h1+p {
+    position: absolute;
+    top: 30px;
+    left: 48%;
+    margin-left: -255px;
+    color: #7087c8;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+/*ヘッダー:メニュー
+    -----------------------------------------*/
+nav {
+    position: absolute;
+    bottom: -5px;
+    left: 46%;
+    margin-left: -323px;
+    height: 50px;
+    padding-right: 1px;
+    margin-bottom: auto;
+}
+
+nav ul li {
+    float: left;
+    border-left: 1px solid #7E989B;
+    border-right: 1px solid #7E989B;
+    margin-left: -1px;
+}
+
+nav ul li a {
+    display: block;
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    line-height: 48px;
+    color: #496bcb;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #496bcb;
+    border-bottom: 5px solid #496bcb;
+}
+
+/*フッター
+    -----------------------------------------*/
+footer {
+    clear: both;
+}
+
+footer small {
+
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #6e7a9d;
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFF;
+    font-family: Arial, "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ Ｐゴシック", sans-serif;
+}
+
+/*noscript
+    -----------------------------------------*/
+p#noscript {
+    width: 80%;
+    padding: 30px;
+    margin: 0 auto;
+    color: red;
+    font-weight: bold;
+}
+
+/*複数ページで使用
+    -----------------------------------------
+    -----------------------------------------*/
+#contents {
+    margin: 50px 200px 5px;
+    padding: 0 20px 50px 20px;
+    width: 900px;
+    position: relative;
+    line-height: 1.1;
+}
+
+#contents:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+*+html #contents {
+    min-height: 1px;
+}
+
+section:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+*+html section {
+    min-height: 1px;
+}
+
+section {
+    margin-bottom: 10px;
+}
+
+section img {
+    border: 0px solid #999;
+}
+
+#side_prof {
+    clear: both;
+    width: 170px;
+    height: 285px;
+    border: solid 3px #999;
+    margin: 0 0px 30px;
+    margin-bottom: 10px;
+    padding: 15px;
+    background: url(../img/bg_side_prof.png) repeat;
+
+}
+
+#side_prof .title {
+    margin-top: 5px;
+    font-weight: bold;
+    color: #627692;
+    line-height: 1.6em;
+    font-size:20px;
+}
+
+#side_prof .name {
+    margin: 0 0 4px 0;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.6em;
+}
+
+#side_prof .text {
+    line-height: 1.3em;
+    font-size: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* 水平方向の中央揃え */
+    align-items: center; /* 垂直方向の中央揃え */
+    height: 100%;
+    width: 100%;
+}
+
+/*メニューカテゴリーリスト
+-----------------------------------------*/
+#categoryMenu {
+  
+    position: absolute;
+    top: 730px;
+    left: 20px;
+    width: 217px;
+}
+
+#categoryMenu h2 {
+    background: rgb(173, 173, 173);
+    height: 30px;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 33px;
+    text-indent: 10px
+}
+
+section ul {
+    border: 1px solid #BBB;
+    background: #F8F9FC;
+    padding-bottom: 15px;
+}
+
+section li a {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #333;
+    text-decoration: none;
+    background: url(../img/icon1.png) no-repeat 5px 13px;
+    padding: 10px 10px 10px 17px;
+    margin: 0 5px;
+    border-bottom: 1px dotted #959595;
+}
+
+section li a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+/*modoru------*/
+.modoru {
+    border: 1px solid #BBB;
+    background: #F8F9FC;
+    padding-bottom: 15px;
+}
+
+.modoru li a {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #333;
+    text-decoration: none;
+  
+    padding: 10px 10px 10px 17px;
+    margin: 0 5px;
+ 
+}
+
+.modoru li a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+
+
+
+/*見出し
+    -----------------------------------------*/
+section>h1 {
+    background: url(../img/midashi1.png) no-repeat;
+    font-size: 21px;
+    color: #FFF;
+    text-indent: 45px;
+    width: 100%;
+    height: 41px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    position: relative;
+    font-family: Arial, "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ Ｐゴシック", sans-serif;
+}
+
+section>h1 small {
+    font-size: 15px;
+    color: #ffffff;
+    position: absolute;
+    right: 50px;
+    top: 0;
+    height: 40px;
+    font-weight: normal;
+}
+
+section h1,
+section h2 {
+    font-weight: normal;
+}
+
+
+.out {
+    position: relative;
+    top: 0;
+    left: 0px;
+    width: 940px
+}
+
+.out img {
+    display: block;
+    width: 910px;
+    height: auto;
+    left: 20px;
+
+}
+
+.in img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s;
+    z-index: 0;
+}
+
+.in img {
+    display: block;
+    width: 910px;
+    height: auto;
+
+}
+
+input {
+    display: none;
+}
+
+.in {
+    display: flex;
+    justify-content: center;
+}
+
+label span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    padding: 7px;
+    margin: -50px 0 0;
+    border-radius: 100%;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    left: -20px;
+}
+
+label span::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #4287f5;
+    opacity: 0.5;
+    border-radius: 100%;
+    left: -200px;
+}
+
+input:nth-of-type(1):checked~.in label:nth-of-type(1) span::before,
+input:nth-of-type(2):checked~.in label:nth-of-type(2) span::before,
+input:nth-of-type(3):checked~.in label:nth-of-type(3) span::before,
+input:nth-of-type(4):checked~.in label:nth-of-type(4) span::before {
+    background: #000;
+    opacity: 1;
+}
+
+label span::before {
+    animation: slidebutton 14s infinite;
+}
+
+@keyframes slidebutton {
+    0% {
+        opacity: 0.5;
+        background: #4287f5;
+    }
+
+    3.5% {
+        opacity: 1;
+        background: #000;
+    }
+
+    /* b÷x×100=y */
+    25% {
+        opacity: 1;
+        background: #000;
+    }
+
+    /* 100÷c=z */
+    28.5% {
+        opacity: 0.5;
+        background: #4287f5;
+    }
+
+    /* y+z */
+}
+
+label:nth-of-type(2) span::before,
+label:nth-of-type(2) img {
+    animation-delay: 3.5s;
+}
+
+label:nth-of-type(3) span::before,
+label:nth-of-type(3) img {
+    animation-delay: 7s;
+}
+
+label:nth-of-type(4) span::before,
+label:nth-of-type(4) img {
+    animation-delay: 10.5s;
+}
+
+input:nth-of-type(1):checked~.in label:nth-of-type(1) img,
+input:nth-of-type(2):checked~.in label:nth-of-type(2) img,
+input:nth-of-type(3):checked~.in label:nth-of-type(3) img,
+input:nth-of-type(4):checked~.in label:nth-of-type(4) img {
+    opacity: 1;
+    z-index: 1;
+}
+
+.in img {
+    animation: slide 14s infinite;
+    /* (a+b)×c=x */
+    opacity: 0;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+    }
+
+    3.5% {
+        opacity: 1;
+        z-index: 1;
+    }
+
+    /* b÷x×100=y */
+    25% {
+        opacity: 1;
+    }
+
+    /* 100÷c=z */
+    28.5% {
+        opacity: 0;
+        z-index: 0;
+    }
+
+    /* y+z */
+}
+
+input:checked~.in img,
+input:checked~.in span::before {
+    animation: none;
+}
+
+.in:hover img,
+.in:hover span::before {
+    animation-play-state: paused;
+    /* マウスを載せると一時停止 */
+}
+
+/*1.フェードインアニメーションの指定*/
+.scroll {opacity: 0;} /*一瞬表示されるのを防ぐ*/
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;         
+    }
+    100% {
+    opacity: 1;
+    transform: translate(0);
+    }
+}

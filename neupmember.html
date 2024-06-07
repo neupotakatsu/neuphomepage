@@ -1,0 +1,181 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+
+<html lang="ja">
+<link rel="stylesheet" href="css/neup.css">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- ↓ページタイトル↓ -->
+  <title>Event｜neup</title>
+
+  <!-- ↓検索エンジン用ここから↓ -->
+  <meta name="Description" content="検索用文言">
+  <meta name="Keywords" content="検索用キーワードカンマ（,）区切り">
+  <!-- ↑検索エンジン用ここまで↑-->
+  <link rel="stylesheet" href="css/neup.css" type="text/css">
+  <link rel="stylesheet" href="css/neupmember.css" type="text/css">
+  <link rel="stylesheet" href="css/lightbox.css" type="text/css">
+
+  <script src="js/prototype.js"></script>
+  <script src="js/scriptaculous.js?load=effects,builder"></script>
+  <script src="js/lightbox-web.js"></script>
+
+
+  <script>
+    $(function () {
+      $(window).scroll(function () {
+        const wHeight = $(window).height();
+        const scrollPosition = $(window).scrollTop();
+        $('.scroll').each(function () {
+          const targetPosition = $(this).offset().top;
+          if (scrollPosition > targetPosition - wHeight + 60) {
+            $(this).addClass("fadeIn");
+          }
+        });
+      });
+    });
+  </script>
+
+
+  <!--[if lt IE 9]>
+<script src="common/js/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<body>
+  <noscript>
+    <p id="noscript">このWebサイトはJavaScriptを使用しています。<!--[if lt IE 9]><br>
+    Internet Explorer 7／8をお使いの方はJavaScriptをオンにしてご覧ください。<![endif]-->
+    </p>
+  </noscript>
+
+  <header>
+    <!-- ↓ロゴ↓ -->
+    <h1>
+      <a href="neuphome.html"><img src="img/neuprogo.png" alt="neup" width="150"></a>
+    </h1>
+
+    <!-- ↓キャッチコピー↓ -->
+    <p>オタクのためのオタ活ハンドメイド雑貨店<br>
+    </p>
+
+
+    <!-- ↓ナビゲーションここから↓ -->
+    <nav>
+      <ul>
+        <li><a href="neuphome.html">Home</a></li>
+        <li><a href="neupnews.html">News</a></li>
+        <li><a href="neupmember.html">Member</a></li>
+        <li><a href="neupproducts.html">Products</a></li>
+        <li><a href="neupevent.html">Event</a></li>
+        <!--<li><a href="neup.html">neup</a></li>-->
+      </ul>
+    </nav>
+    <!-- ↑ナビゲーションここまで↑ -->
+  </header>
+  <div class="container">
+    <div id="contents">
+      <section>
+        <!-- ↓ページの見出し↓ -->
+        <h1>Member Introduction
+          <!-- ↓ページの説明↓ -->
+          <small>個性豊かなneupメンバー！</small>
+        </h1>
+
+        <!-- ↓スタッフ紹介ここから↓ -->
+
+        <!-- ↓↓スタッフ1ここから↓↓ -->
+        <div class="big leftImg">
+
+          <!-- ↓↓↓スタッフ1の写真↓↓↓ -->
+          <img src="img/member.jpeg" alt="写真：山田A子" height="300px">
+        </div>
+        <!-- ↑スタッフ1ここまで↑ -->
+
+        <!-- ↓スタッフ2ここから↓ -->
+        <div class="rightImg">
+          <h2 class="fadeIn">yuka 🗝️</h2>
+          <p>neupの代表です！
+            <br>主にトレカケースデコ、トレカキーホルダー、Ｌ版デコケースを販売しています。
+            <br>可愛い系からクール系、シンプル系などいろんなタイプの商品を制作しています🌟
+            <br>話すのが好きなので気軽に声をかけてくださるとうれしいです^^♪
+          </p>
+          <!-- ↓↓↓スタッフ2の写真↓↓↓ -->
+
+          <img src="img/member1.jpeg" alt="写真：田中B子" height="170">
+
+
+          <img src="img/yuka1.jpeg" alt="写真：田中B子" height="170">
+
+        </div>
+        <!-- ↑↑スタッフ2ここまで↑↑ -->
+
+        <!-- ↓↓スタッフ3ここから↓↓ -->
+        <div class="leftImg">
+          <h2 class="fadeIn">watm 🥨</h2>
+          <p>主に会計や書記をしています！
+            <br>リボンを使ったトレカデコを中心に制作しています。
+            <br>他にも、ペンライトリボンやアクキーリボン、缶バッジロゼットも販売しています。
+            <br>かわいいおリボンで「"あなたの沼"」のお手伝いができたらうれしいです！🎀
+          </p>
+          <img src="img/member2.jpeg" alt="写真：佐藤C郎" height="170">
+          <img src="img/ayume１.jpg" alt="写真：佐藤C郎" height="170">
+        </div>
+        <!-- ↑↑スタッフ3ここまで↑↑ -->
+
+        <div class="rightImg">
+          <h2 class="fadeIn">caru 🐟</h2>
+          <p>主に企画や店番をしています！
+            <br>ビーズを使ったペンライトキーホルダーや、ホイップデコのトレカケース、ミニフォトキーホルダーなどを制作しています。
+            <br>あなたの推し活が「きらきら可愛い」で溢れますように✧.・
+          </p>
+          <!-- ↓↓↓スタッフ2の写真↓↓↓ -->
+          <img src="img/member3.jpeg" alt="写真：田中B子" height="170">
+          <img src="img/sie1.jpg" alt="写真：田中B子" height="170">
+
+        </div>
+
+        <div class="leftImg">
+          <h2 class="fadeIn">non 🦌
+          </h2>
+          <p>おもに店内装飾や店番をしています！
+            <br>トレカキーホルダーとミニフォトキーホルダーを販売しています🎀❕
+            <br>ねこちゃんやうさぎをモチーフにしたトレカケースもあるのでお気に入りのデコをみつけてみてください🐰🐱♡
+            <br>オタ活にかわいいをplusする手助けになればうれしいです🎀♡
+          </p>
+
+          <img src="img/member4.jpeg" alt="写真：佐藤C郎" height="170">
+          <img src="img/non1.jpeg" alt="写真：佐藤C郎" height="170">
+
+        </div>
+
+        <div class="rightImg">
+          <h2 class="fadeIn">mg 🥀</h2>
+          <p>主に店内装飾や店番をしています！
+            <br>アクリルを使ったトレカスタンドとアクスタケースを販売しています。
+            <br>トレカやアクスタを傷や汚れから保護し、自立してかわいく飾れるケーススタンドです♪
+            イラストからデータ作成、カットまですべて手作りのオリジナル商品です！
+            <br>あなたの推し活がもっとキラキラしたものになりますように❣️
+          </p>
+          <!-- ↓↓↓スタッフ2の写真↓↓↓ -->
+          <img src="img/member5.jpeg" alt="写真：田中B子" height="170">
+          <img src="img/megumi1.jpg" alt="写真：田中B子"
+              height="170">
+
+        </div>
+
+        <!-- ↑スタッフ紹介ここまで↑ -->
+      </section>
+    </div>
+  </div>
+  
+  <footer>
+    <!-- ↓コピーライト↓ -->
+    <small>© 2024. neup All rights reserved.</small>
+  </footer>
+</body>
+
+</html>
