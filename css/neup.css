@@ -1,5 +1,26 @@
 @charset "UTF-8";
 
+/* スマートフォン用 */
+@media (max-width: 767px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+/* タブレット用 */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        padding: 20px;
+    }
+}
+
+/* デスクトップ用 */
+@media (min-width: 1200px) {
+    .container {
+        padding: 0px;
+    }
+}
+
 /*全ページ共通
 -----------------------------------------*/
 * {
